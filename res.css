@@ -6,11 +6,17 @@ html {
 
 
 @media only screen and (max-width: 360px) {
+    .sec1{
+        width: 100%;
+    }
     .imgsec1{
         display: none;
     }
     .infosec1{
         margin-left: -80px;
+    }
+    .sec1ul{
+        width: 100%;
     }
 
     .sec2{

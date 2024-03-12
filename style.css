@@ -8,7 +8,7 @@
  .navbar {
      display: flex;
      flex-wrap: wrap;
-     align-items: center;
+     align-items: start;
      justify-content: space-between;
      background-color: rgba(255, 255, 255, 0);
      padding: 15px;
@@ -45,39 +45,27 @@
      color: black;
  }
 
- .navbar .list {
-     list-style: none;
-     display: flex;
-     gap: 25px;
- }
+
 
  #toggle,
  .navbar label {
      display: none;
  }
 
- @media screen and (max-width: 600px) {
+ @media screen and (max-width: 360px) {
      .menu {
          width: 100%;
          max-height: 0;
          overflow: hidden;
      }
 
-     .list {
-         flex-direction: column;
-         align-items: center;
-         padding: 20px;
+     .navbar{
+        width: 100%;
+        text-align: left;
      }
 
-     .navbar label {
-         display: inline-flex;
-         align-items: center;
-         cursor: pointer;
-     }
 
-     #toggle:checked~.menu {
-         max-height: 100%;
-     }
+    
  }
 
 
@@ -130,7 +118,8 @@
 
 .mycard:hover{
     background-color: black;
-    transition: 1s ease-out;
+    color: white;
+    transition: 1s ;
 }
 
 .mycard{
@@ -248,6 +237,12 @@
 .foot{
  text-align: center;
 }
+
+.cardInMyskills:hover{
+    background-color: black;
+    color: white;
+    transition: 1.2s;
+}
 .cardInMyskills{
     padding: 30px;
         height: 300px;
@@ -279,5 +274,22 @@
 }
 
 .lastSec{
-    height: 50vh
+    height: 50vh;
+    padding: 100px;
 }
+
+
+.cardInicon:hover{
+    background-color: black;
+    color: white;
+    transition: 1.2s;
+    margin-top: -10px;
+}
+
+.cardInicon{
+    padding: 12px;
+        border-radius: 10px;
+    
+        box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+}
+
